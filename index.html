@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plant Disease Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🌱 PlantCare
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#detect">Detect Disease</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h1>
+                Plant Disease
+                <span>Detection</span>
+            </h1>
+
+            <p>
+                Upload an image of your plant and detect
+                possible diseases easily.
+            </p>
+
+            <a href="#detect" class="hero-button">
+                Start Detection
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            🌿
+        </div>
+
+    </section>
+
+
+    <!-- Detection Section -->
+    <section class="detection-section" id="detect">
+
+        <h2>Detect Plant Disease</h2>
+
+        <p class="section-description">
+            Upload a clear image of the affected plant leaf.
+        </p>
+
+
+        <!-- Upload Box -->
+        <div class="upload-box">
+
+            <div class="upload-icon">
+                📷
+            </div>
+
+            <h3>Upload Plant Image</h3>
+
+            <p>
+                Select an image from your computer
+            </p>
+
+            <label for="plant-image" class="upload-button">
+                Choose Image
+            </label>
+
+            <input
+                type="file"
+                id="plant-image"
+                accept="image/*"
+            >
+
+            <p class="file-info">
+                Supported formats: JPG, JPEG, PNG
+            </p>
+
+        </div>
+
+
+        <!-- Detect Button -->
+        <button class="detect-button">
+            Detect Disease
+        </button>
+
+
+        <!-- Result Box -->
+        <div class="result-box">
+
+            <h3>Detection Result</h3>
+
+            <p>
+                Your plant disease result will appear here.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+
+        <h2>About PlantCare</h2>
+
+        <p>
+            PlantCare is a plant disease detection platform
+            designed to help users identify possible diseases
+            in plants by uploading an image of the affected leaf.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 PlantCare | Plant Disease Detection
+        </p>
+
+    </footer>
+
+</body>
+</html>
