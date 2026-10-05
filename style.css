@@ -1,0 +1,372 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5faf5;
+    color: #1f3d2b;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 70px;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8%;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #267a3f;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+
+.nav-links a:hover {
+    color: #267a3f;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 60px 10%;
+}
+
+
+.hero-text {
+    max-width: 550px;
+}
+
+
+.hero-text h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+
+.hero-text h1 span {
+    color: #299447;
+}
+
+
+.hero-text p {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #555;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-button {
+    display: inline-block;
+
+    background-color: #299447;
+    color: white;
+
+    padding: 14px 25px;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+.hero-button:hover {
+    background-color: #207538;
+}
+
+
+/* Big plant emoji */
+.hero-image {
+    font-size: 180px;
+}
+
+
+/* =========================
+   DETECTION SECTION
+========================= */
+
+.detection-section {
+    background-color: white;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+
+.detection-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+.section-description {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+
+/* Upload Box */
+
+.upload-box {
+    width: 500px;
+    max-width: 90%;
+
+    margin: auto;
+
+    padding: 40px;
+
+    border: 2px dashed #72ad7f;
+
+    border-radius: 15px;
+
+    background-color: #f7fcf7;
+}
+
+
+.upload-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+
+.upload-box h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+
+.upload-box p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* Hide the default file input */
+#plant-image {
+    display: none;
+}
+
+
+/* Custom upload button */
+
+.upload-button {
+    display: inline-block;
+
+    background-color: #299447;
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+.upload-button:hover {
+    background-color: #207538;
+}
+
+
+.file-info {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+/* Detect button */
+
+.detect-button {
+    margin-top: 30px;
+
+    padding: 14px 35px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #1f6f38;
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+.detect-button:hover {
+    background-color: #155528;
+}
+
+
+/* =========================
+   RESULT BOX
+========================= */
+
+.result-box {
+    width: 500px;
+    max-width: 90%;
+
+    margin: 40px auto 0;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    background-color: #eef7ef;
+}
+
+
+.result-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.result-box p {
+    color: #666;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    padding: 70px 20%;
+
+    text-align: center;
+
+    background-color: #eaf5eb;
+}
+
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+.about-section p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #1f3d2b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+
+    .nav-links {
+        gap: 12px;
+    }
+
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 20px;
+    }
+
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+
+    .hero-image {
+        font-size: 120px;
+
+        margin-top: 30px;
+    }
+
+
+    .upload-box {
+        padding: 30px 15px;
+    }
+
+}
